@@ -1,0 +1,1695 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+<!-- saved from url=(0053)https://getbootstrap.com/2.3.2/examples/carousel.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Palanquin" rel="stylesheet"> 
+    <!-- Le styles -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|PT+Sans+Narrow|Palanquin:100" rel="stylesheet"> <meta name="Excel Workbook Frameset">
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<link rel=File-List href="consumerdiscret_files/filelist.xml">
+<![if !supportTabStrip]>
+<link id="shLink" href="consumerdiscret_files/sheet001.htm">
+
+<link id="shLink">
+
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      /*background-color: #e9f5e1; light green */
+     /* background-color: #e9f0e9; light gray */
+     /*background-color: #fceab6; beige */
+   }
+
+   h3,h4 {
+    text-align: center;
+   }
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 0px; /* Increase vertical padding to match navbar links */
+      font-size: 25px;
+      text-align: center;
+      margin-top: 29px;
+      margin-right: 12px;
+      font-weight: bold;
+      font-family: 'Cinzel Decorative', sans-serif;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+    .dropdown-menu {
+      list-style-type: none;
+    }
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+      color: gray;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+    br {
+      height: 5px;
+    }
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    td {
+      padding: 15px;
+      border: 1px dotted gray;
+    }
+    .carousel .item {
+      height: 500px;
+    }
+    #row2 {
+      margin: 5%;
+      margin-left:15%;
+      margin-bottom: 0%;
+    }
+    img {
+      margin-left: auto;
+      margin-right: auto;
+      width: 25%;
+      display: block;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    h1 {
+      margin-top: 6%;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      font-family: 'Palanquin', sans-serif;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: bold;
+      font-family: 'Palanquin',sans-serif;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+    .img-circle {
+      height: 140px;
+      width: auto;
+    }
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 100px
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 3;
+      }
+
+    }
+#intro {
+  margin-top: 100px;
+  text-align: center;
+  font-family: 'Palanquin', sans-serif;
+  height: 200px;
+  background: linear-gradient(to right, rgba(125,154,184,0), rgba(125,154,184,1));
+  /*background: linear-gradient(to right, rgba(150, 18, 18, 0.5),rgba(128, 15, 15, 1)); burgundy */
+}
+.container-fluid .row h3 {
+  margin: 5%;
+}
+.container.marketing .row {
+  margin-top: -50px;
+}
+.navbar.transparent.navbar-default .navbar-inner {
+  position: static;
+  border-width: 0px;
+  -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+   background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%); */
+
+}
+thead {
+  background-color: #515b77;
+  color: white;
+}
+.featurette p {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container.marketing {
+  margin-top: 100px;
+}
+ul {
+  margin-top: 18px;
+  font-family: 'Palanquin', sans-serif;
+  font-size: 15px;
+  text-align:center;
+  list-style-type: none;
+}
+li {
+  line-height: 30px;
+}
+.featurette {
+  margin-top: -125px;
+}
+#table {
+  margin-top: 30px;
+  display: inline-block;
+}
+thead {
+  background-color: #515b77;
+  color: white;
+}
+body {
+  font-family: 'Palanquin', sans-serif;
+}
+table {
+  display: block;
+  margin-left: 22%;
+  margin-top: 20px;
+  font-size: 14px;
+  margin-right: auto;
+}
+#key {
+  display: inline-block;
+  margin-right: 50px;
+  background-color: #edf0f7;
+  height: 150px;
+}
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="https://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="https://getbootstrap.com/2.3.2/assets/ico/favicon.png">
+ </head>
+
+  <body>
+
+
+<div class="top">
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container-fluid">
+
+        <div class="navbar transparent navbar-default">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" style="color: black; font-weight: bold; text-shadow: none;" href="index.html">Rational Investing</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+             <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                     <li>
+                      <a href="valuation.html">Valuation</a>
+                     </li>
+                  <li class="dropdown">
+                  <a href="https://getbootstrap.com/2.3.2/examples/carousel.html#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="ourteam.html">Our Team</a></li>
+                    <li><a href="https://getbootstrap.com/2.3.2/examples/carousel.html#">Our Mission</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Nav header</li>
+                    <li><a href="https://getbootstrap.com/2.3.2/examples/carousel.html#">Separated link</a></li>
+                    <li><a href="https://getbootstrap.com/2.3.2/examples/carousel.html#">One more separated link</a></li>
+                  </ul>
+                </li>
+                <li><a href="https://getbootstrap.com/2.3.2/examples/carousel.html#contact">Contact</a></li>
+                <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
+
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+</div><!-- /.top -->
+<div class="container-fluid" id="intro">
+<div class="row">
+<h1> Sector Valuations</h1>
+</div>
+</div>
+
+<div class="container-fluid">
+<table>
+  <thead>
+  <tr>
+  <td height=80 class=xl68 width=64 style='height:60.0pt;width:48pt'><a
+  href="javascript:__doPostBack('ctl00$MainContent$grdSubSectorWiseModel','Sort$Sector')"
+  target="_parent">Sector</a></td>
+  <td class=xl69 width=64 style='width:48pt'><a
+  href="javascript:__doPostBack('ctl00$MainContent$grdSubSectorWiseModel','Sort$MarketToModel')"
+  target="_parent">Market To Model</a></td>
+  <td class=xl69 width=64 style='width:48pt'><nobr style='font-size:inherit'><a
+  href="http://rationalinvesting.com/SubSectorWiseModels.aspx?Industry=Consumer+Discretionary"
+  target="_parent" style='border-top-style:initial !important;border-right-style:
+  initial !important;border-left-style:initial !important;border-top-color:
+  initial !important;border-right-color:initial !important;border-left-color:
+  initial !important;border-image: initial !important;font-size:inherit !important'>Total&nbsp;Firms</a></nobr></td>
+  <td class=xl70 width=64 style='width:48pt'>Market Cap ($ bn)</td>
+  <td class=xl70 width=64 style='width:48pt'>Avg. Market Cap ($ bn)</td>
+  <td class=xl69 width=64 style='width:48pt'><a
+  href="javascript:__doPostBack('ctl00$MainContent$grdSubSectorWiseModel','Sort$EvToRevenue')"
+  target="_parent">EV to Revenue</a></td>
+  <td class=xl69 width=64 style='width:48pt'><nobr style='font-size:inherit'><a
+  href="http://rationalinvesting.com/SubSectorWiseModels.aspx?Industry=Consumer+Discretionary"
+  target="_parent" style='border-top-style:initial !important;border-right-style:
+  initial !important;border-left-style:initial !important;border-top-color:
+  initial !important;border-right-color:initial !important;border-left-color:
+  initial !important;border-image: initial !important;font-size:inherit !important'>Price&nbsp;to
+  FCF</a></nobr></td>
+  <td class=xl71 width=64 style='width:48pt'>Beta</td>
+</tr>
+ </thead>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl72 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Publishing%20-%20Books&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Publishing - Books</a></td>
+  <td class=xl65 width=64 style='width:48pt'>0</td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>0</td>
+  <td class=xl65 width=64 style='width:48pt'>0</td>
+  <td class=xl65 width=64 style='width:48pt'>0</td>
+  <td class=xl65 width=64 style='width:48pt'>0</td>
+  <td class=xl73 width=64 style='width:48pt'>&nbsp;</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl74 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Consumer%20Services&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Consumer Services</a></td>
+  <td class=xl66 width=64 style='width:48pt'>0.44</td>
+  <td class=xl66 width=64 style='width:48pt'>1</td>
+  <td class=xl66 width=64 style='width:48pt'>12</td>
+  <td class=xl66 width=64 style='width:48pt'>12</td>
+  <td class=xl66 width=64 style='width:48pt'>0.1</td>
+  <td class=xl66 width=64 style='width:48pt'>24</td>
+  <td class=xl75 width=64 style='width:48pt'>0.9</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl72 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Electronics%20-%20Diversified%20%20&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Electronics - Diversified</a></td>
+  <td class=xl65 width=64 style='width:48pt'>0.53</td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>427</td>
+  <td class=xl65 width=64 style='width:48pt'>427</td>
+  <td class=xl65 width=64 style='width:48pt'>0.2</td>
+  <td class=xl65 width=64 style='width:48pt'>126.8</td>
+  <td class=xl73 width=64 style='width:48pt'>16.1</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl74 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Broadcasting&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Broadcasting</a></td>
+  <td class=xl66 width=64 style='width:48pt'>0.63</td>
+  <td class=xl66 width=64 style='width:48pt'>1</td>
+  <td class=xl66 width=64 style='width:48pt'>2</td>
+  <td class=xl66 width=64 style='width:48pt'>2</td>
+  <td class=xl66 width=64 style='width:48pt'>1.6</td>
+  <td class=xl66 width=64 style='width:48pt'>11.5</td>
+  <td class=xl75 width=64 style='width:48pt'>1.5</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl72 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Residential%20Services&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Residential Services</a></td>
+  <td class=xl65 width=64 style='width:48pt'>0.66</td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>4</td>
+  <td class=xl65 width=64 style='width:48pt'>4</td>
+  <td class=xl65 width=64 style='width:48pt'>0.3</td>
+  <td class=xl65 width=64 style='width:48pt'>4774.1</td>
+  <td class=xl73 width=64 style='width:48pt'>0.4</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl74 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Manufactured%20Housing&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Manufactured Housing</a></td>
+  <td class=xl66 width=64 style='width:48pt'>0.66</td>
+  <td class=xl66 width=64 style='width:48pt'>1</td>
+  <td class=xl66 width=64 style='width:48pt'>2</td>
+  <td class=xl66 width=64 style='width:48pt'>2</td>
+  <td class=xl66 width=64 style='width:48pt'>0.1</td>
+  <td class=xl66 width=64 style='width:48pt'>29.4</td>
+  <td class=xl75 width=64 style='width:48pt'>1.4</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl72 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Auto/Truck%20Manufacturers&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Auto/Truck Manufacturers</a></td>
+  <td class=xl65 width=64 style='width:48pt'>0.67</td>
+  <td class=xl65 width=64 style='width:48pt'>4</td>
+  <td class=xl65 width=64 style='width:48pt'>333</td>
+  <td class=xl65 width=64 style='width:48pt'>83</td>
+  <td class=xl65 width=64 style='width:48pt'>0.4</td>
+  <td class=xl65 width=64 style='width:48pt'>17.1</td>
+  <td class=xl73 width=64 style='width:48pt'>3.1</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl74 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Housewares%20Accessories&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Housewares Accessories</a></td>
+  <td class=xl66 width=64 style='width:48pt'>0.68</td>
+  <td class=xl66 width=64 style='width:48pt'>3</td>
+  <td class=xl66 width=64 style='width:48pt'>68</td>
+  <td class=xl66 width=64 style='width:48pt'>23</td>
+  <td class=xl66 width=64 style='width:48pt'>0.3</td>
+  <td class=xl66 width=64 style='width:48pt'>27.7</td>
+  <td class=xl75 width=64 style='width:48pt'>1.7</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl72 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Toys/Games&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Toys/Games</a></td>
+  <td class=xl65 width=64 style='width:48pt'>0.7</td>
+  <td class=xl65 width=64 style='width:48pt'>5</td>
+  <td class=xl65 width=64 style='width:48pt'>29</td>
+  <td class=xl65 width=64 style='width:48pt'>6</td>
+  <td class=xl65 width=64 style='width:48pt'>0.4</td>
+  <td class=xl65 width=64 style='width:48pt'>18.9</td>
+  <td class=xl73 width=64 style='width:48pt'>0.8</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl74 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Restaurants%20-%20Fast%20Food&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Restaurants - Fast Food</a></td>
+  <td class=xl66 width=64 style='width:48pt'>0.7</td>
+  <td class=xl66 width=64 style='width:48pt'>12</td>
+  <td class=xl66 width=64 style='width:48pt'>240</td>
+  <td class=xl66 width=64 style='width:48pt'>20</td>
+  <td class=xl66 width=64 style='width:48pt'>0.6</td>
+  <td class=xl66 width=64 style='width:48pt'>477.7</td>
+  <td class=xl75 width=64 style='width:48pt'>0.6</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl72 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Home%20Furnishings&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Home Furnishings</a></td>
+  <td class=xl65 width=64 style='width:48pt'>0.71</td>
+  <td class=xl65 width=64 style='width:48pt'>16</td>
+  <td class=xl65 width=64 style='width:48pt'>54</td>
+  <td class=xl65 width=64 style='width:48pt'>3</td>
+  <td class=xl65 width=64 style='width:48pt'>0.2</td>
+  <td class=xl65 width=64 style='width:48pt'>81.3</td>
+  <td class=xl73 width=64 style='width:48pt'>0.9</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl74 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Greeting%20Cards/Gift%20Items&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Greeting Cards/Gift Items</a></td>
+  <td class=xl66 width=64 style='width:48pt'>0.72</td>
+  <td class=xl66 width=64 style='width:48pt'>1</td>
+  <td class=xl66 width=64 style='width:48pt'>0</td>
+  <td class=xl66 width=64 style='width:48pt'>0</td>
+  <td class=xl66 width=64 style='width:48pt'>0.1</td>
+  <td class=xl66 width=64 style='width:48pt'>0</td>
+  <td class=xl75 width=64 style='width:48pt'>1.1</td>
+ </tr>
+ <tr height=100 style='height:75.0pt'>
+  <td height=100 class=xl72 width=64 style='height:75.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Computer%20Hardware%20and%20software&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Computer Hardware and software</a></td>
+  <td class=xl65 width=64 style='width:48pt'>0.72</td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>2</td>
+  <td class=xl65 width=64 style='width:48pt'>2</td>
+  <td class=xl65 width=64 style='width:48pt'>0.1</td>
+  <td class=xl65 width=64 style='width:48pt'>7.3</td>
+  <td class=xl73 width=64 style='width:48pt'>1.4</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl74 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Gaming%20Activities&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Gaming Activities</a></td>
+  <td class=xl66 width=64 style='width:48pt'>0.72</td>
+  <td class=xl66 width=64 style='width:48pt'>5</td>
+  <td class=xl66 width=64 style='width:48pt'>19</td>
+  <td class=xl66 width=64 style='width:48pt'>4</td>
+  <td class=xl66 width=64 style='width:48pt'>1</td>
+  <td class=xl66 width=64 style='width:48pt'>414.6</td>
+  <td class=xl75 width=64 style='width:48pt'>1.2</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl72 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Travel%20Services&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Travel Services</a></td>
+  <td class=xl65 width=64 style='width:48pt'>0.73</td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>2</td>
+  <td class=xl65 width=64 style='width:48pt'>2</td>
+  <td class=xl65 width=64 style='width:48pt'>0.2</td>
+  <td class=xl65 width=64 style='width:48pt'>0</td>
+  <td class=xl73 width=64 style='width:48pt'>0.7</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl74 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Multilevel%20marketing&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Multilevel marketing</a></td>
+  <td class=xl66 width=64 style='width:48pt'>0.74</td>
+  <td class=xl66 width=64 style='width:48pt'>1</td>
+  <td class=xl66 width=64 style='width:48pt'>1</td>
+  <td class=xl66 width=64 style='width:48pt'>1</td>
+  <td class=xl66 width=64 style='width:48pt'>0</td>
+  <td class=xl66 width=64 style='width:48pt'>15.4</td>
+  <td class=xl75 width=64 style='width:48pt'>0.5</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl72 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Business%20Equipment&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Business Equipment</a></td>
+  <td class=xl65 width=64 style='width:48pt'>0.74</td>
+  <td class=xl65 width=64 style='width:48pt'>4</td>
+  <td class=xl65 width=64 style='width:48pt'>20</td>
+  <td class=xl65 width=64 style='width:48pt'>5</td>
+  <td class=xl65 width=64 style='width:48pt'>0.4</td>
+  <td class=xl65 width=64 style='width:48pt'>13.3</td>
+  <td class=xl73 width=64 style='width:48pt'>1.6</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl74 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Conglomerates&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Conglomerates</a></td>
+  <td class=xl66 width=64 style='width:48pt'>0.75</td>
+  <td class=xl66 width=64 style='width:48pt'>2</td>
+  <td class=xl66 width=64 style='width:48pt'>752</td>
+  <td class=xl66 width=64 style='width:48pt'>376</td>
+  <td class=xl66 width=64 style='width:48pt'>0.3</td>
+  <td class=xl66 width=64 style='width:48pt'>118.8</td>
+  <td class=xl75 width=64 style='width:48pt'>13.1</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl72 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Home%20Furnishing%20Stores&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Home Furnishing Stores</a></td>
+  <td class=xl65 width=64 style='width:48pt'>0.75</td>
+  <td class=xl65 width=64 style='width:48pt'>4</td>
+  <td class=xl65 width=64 style='width:48pt'>24</td>
+  <td class=xl65 width=64 style='width:48pt'>6</td>
+  <td class=xl65 width=64 style='width:48pt'>0.1</td>
+  <td class=xl65 width=64 style='width:48pt'>13.1</td>
+  <td class=xl73 width=64 style='width:48pt'>1.4</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl74 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Restaurants%20-%20Dining&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Restaurants - Dining</a></td>
+  <td class=xl66 width=64 style='width:48pt'>0.78</td>
+  <td class=xl66 width=64 style='width:48pt'>15</td>
+  <td class=xl66 width=64 style='width:48pt'>73</td>
+  <td class=xl66 width=64 style='width:48pt'>5</td>
+  <td class=xl66 width=64 style='width:48pt'>0.5</td>
+  <td class=xl66 width=64 style='width:48pt'>297.1</td>
+  <td class=xl75 width=64 style='width:48pt'>0.7</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl72 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Media%20Services&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Media Services</a></td>
+  <td class=xl65 width=64 style='width:48pt'>0.78</td>
+  <td class=xl65 width=64 style='width:48pt'>10</td>
+  <td class=xl65 width=64 style='width:48pt'>98</td>
+  <td class=xl65 width=64 style='width:48pt'>10</td>
+  <td class=xl65 width=64 style='width:48pt'>0.6</td>
+  <td class=xl65 width=64 style='width:48pt'>293.4</td>
+  <td class=xl73 width=64 style='width:48pt'>1</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl74 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Marketing%20Services&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Marketing Services</a></td>
+  <td class=xl66 width=64 style='width:48pt'>0.79</td>
+  <td class=xl66 width=64 style='width:48pt'>5</td>
+  <td class=xl66 width=64 style='width:48pt'>6</td>
+  <td class=xl66 width=64 style='width:48pt'>1</td>
+  <td class=xl66 width=64 style='width:48pt'>0.6</td>
+  <td class=xl66 width=64 style='width:48pt'>17.4</td>
+  <td class=xl75 width=64 style='width:48pt'>1</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl72 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Publishing%20-%20Newspapers&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Publishing - Newspapers</a></td>
+  <td class=xl65 width=64 style='width:48pt'>0.8</td>
+  <td class=xl65 width=64 style='width:48pt'>4</td>
+  <td class=xl65 width=64 style='width:48pt'>12</td>
+  <td class=xl65 width=64 style='width:48pt'>3</td>
+  <td class=xl65 width=64 style='width:48pt'>0.5</td>
+  <td class=xl65 width=64 style='width:48pt'>413.8</td>
+  <td class=xl73 width=64 style='width:48pt'>1</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl74 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Sporting%20Goods&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Sporting Goods</a></td>
+  <td class=xl66 width=64 style='width:48pt'>0.81</td>
+  <td class=xl66 width=64 style='width:48pt'>2</td>
+  <td class=xl66 width=64 style='width:48pt'>2</td>
+  <td class=xl66 width=64 style='width:48pt'>1</td>
+  <td class=xl66 width=64 style='width:48pt'>0.1</td>
+  <td class=xl66 width=64 style='width:48pt'>16.2</td>
+  <td class=xl75 width=64 style='width:48pt'>1.2</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl72 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Rubber%20Plastics&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Rubber Plastics</a></td>
+  <td class=xl65 width=64 style='width:48pt'>0.84</td>
+  <td class=xl65 width=64 style='width:48pt'>6</td>
+  <td class=xl65 width=64 style='width:48pt'>40</td>
+  <td class=xl65 width=64 style='width:48pt'>7</td>
+  <td class=xl65 width=64 style='width:48pt'>0.2</td>
+  <td class=xl65 width=64 style='width:48pt'>78.6</td>
+  <td class=xl73 width=64 style='width:48pt'>1.3</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl74 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Sports%20Apparel%20and%20footwear&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Sports Apparel and footwear</a></td>
+  <td class=xl66 width=64 style='width:48pt'>0.84</td>
+  <td class=xl66 width=64 style='width:48pt'>4</td>
+  <td class=xl66 width=64 style='width:48pt'>171</td>
+  <td class=xl66 width=64 style='width:48pt'>43</td>
+  <td class=xl66 width=64 style='width:48pt'>0.1</td>
+  <td class=xl66 width=64 style='width:48pt'>428.4</td>
+  <td class=xl75 width=64 style='width:48pt'>0.6</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl72 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Jewellery&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Jewellery</a></td>
+  <td class=xl65 width=64 style='width:48pt'>0.84</td>
+  <td class=xl65 width=64 style='width:48pt'>6</td>
+  <td class=xl65 width=64 style='width:48pt'>77</td>
+  <td class=xl65 width=64 style='width:48pt'>13</td>
+  <td class=xl65 width=64 style='width:48pt'>0.2</td>
+  <td class=xl65 width=64 style='width:48pt'>26.1</td>
+  <td class=xl73 width=64 style='width:48pt'>1</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl74 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Advertising%20Agencies/Services&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Advertising Agencies/Services</a></td>
+  <td class=xl66 width=64 style='width:48pt'>0.85</td>
+  <td class=xl66 width=64 style='width:48pt'>12</td>
+  <td class=xl66 width=64 style='width:48pt'>106</td>
+  <td class=xl66 width=64 style='width:48pt'>9</td>
+  <td class=xl66 width=64 style='width:48pt'>0.5</td>
+  <td class=xl66 width=64 style='width:48pt'>121.9</td>
+  <td class=xl75 width=64 style='width:48pt'>1</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl72 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Discount,%20Variety%20Stores&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Discount, Variety Stores</a></td>
+  <td class=xl65 width=64 style='width:48pt'>0.85</td>
+  <td class=xl65 width=64 style='width:48pt'>14</td>
+  <td class=xl65 width=64 style='width:48pt'>219</td>
+  <td class=xl65 width=64 style='width:48pt'>16</td>
+  <td class=xl65 width=64 style='width:48pt'>0.2</td>
+  <td class=xl65 width=64 style='width:48pt'>842.8</td>
+  <td class=xl73 width=64 style='width:48pt'>0.9</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl74 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Hotels/Motels&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Hotels/Motels</a></td>
+  <td class=xl66 width=64 style='width:48pt'>0.86</td>
+  <td class=xl66 width=64 style='width:48pt'>6</td>
+  <td class=xl66 width=64 style='width:48pt'>84</td>
+  <td class=xl66 width=64 style='width:48pt'>14</td>
+  <td class=xl66 width=64 style='width:48pt'>1.2</td>
+  <td class=xl66 width=64 style='width:48pt'>849</td>
+  <td class=xl75 width=64 style='width:48pt'>1</td>
+ </tr>
+ <tr height=100 style='height:75.0pt'>
+  <td height=100 class=xl72 width=64 style='height:75.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Aerospace/Defense%20Products%20&amp;%20S&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Aerospace/Defense Products &amp; S</a></td>
+  <td class=xl65 width=64 style='width:48pt'>0.86</td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>251</td>
+  <td class=xl65 width=64 style='width:48pt'>251</td>
+  <td class=xl65 width=64 style='width:48pt'>0.5</td>
+  <td class=xl65 width=64 style='width:48pt'>542.1</td>
+  <td class=xl73 width=64 style='width:48pt'>27.7</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl74 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Movie%20Production/Theaters&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Movie Production/Theaters</a></td>
+  <td class=xl66 width=64 style='width:48pt'>0.87</td>
+  <td class=xl66 width=64 style='width:48pt'>8</td>
+  <td class=xl66 width=64 style='width:48pt'>22</td>
+  <td class=xl66 width=64 style='width:48pt'>3</td>
+  <td class=xl66 width=64 style='width:48pt'>0.5</td>
+  <td class=xl66 width=64 style='width:48pt'>21</td>
+  <td class=xl75 width=64 style='width:48pt'>0.8</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl72 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Recreational%20Activities&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Recreational Activities</a></td>
+  <td class=xl65 width=64 style='width:48pt'>0.88</td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>3</td>
+  <td class=xl65 width=64 style='width:48pt'>3</td>
+  <td class=xl65 width=64 style='width:48pt'>0.8</td>
+  <td class=xl65 width=64 style='width:48pt'>22.7</td>
+  <td class=xl73 width=64 style='width:48pt'>0.7</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl74 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Specialty%20Retail,%20Other&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Specialty Retail, Other</a></td>
+  <td class=xl66 width=64 style='width:48pt'>0.88</td>
+  <td class=xl66 width=64 style='width:48pt'>20</td>
+  <td class=xl66 width=64 style='width:48pt'>130</td>
+  <td class=xl66 width=64 style='width:48pt'>6</td>
+  <td class=xl66 width=64 style='width:48pt'>0.2</td>
+  <td class=xl66 width=64 style='width:48pt'>372.2</td>
+  <td class=xl75 width=64 style='width:48pt'>0.9</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl72 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Electrical%20Components%20&amp;%20Equipm&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Electrical Components &amp; Equipm</a></td>
+  <td class=xl65 width=64 style='width:48pt'>0.89</td>
+  <td class=xl65 width=64 style='width:48pt'>3</td>
+  <td class=xl65 width=64 style='width:48pt'>297</td>
+  <td class=xl65 width=64 style='width:48pt'>99</td>
+  <td class=xl65 width=64 style='width:48pt'>0.2</td>
+  <td class=xl65 width=64 style='width:48pt'>323.2</td>
+  <td class=xl73 width=64 style='width:48pt'>11.7</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl74 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=CATV%20Systems&amp;Sector=Consumer%20Discretionary"
+  target="_parent">CATV Systems</a></td>
+  <td class=xl66 width=64 style='width:48pt'>0.9</td>
+  <td class=xl66 width=64 style='width:48pt'>3</td>
+  <td class=xl66 width=64 style='width:48pt'>204</td>
+  <td class=xl66 width=64 style='width:48pt'>68</td>
+  <td class=xl66 width=64 style='width:48pt'>1.6</td>
+  <td class=xl66 width=64 style='width:48pt'>15</td>
+  <td class=xl75 width=64 style='width:48pt'>1.7</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl72 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Home%20Building&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Home Building</a></td>
+  <td class=xl65 width=64 style='width:48pt'>0.94</td>
+  <td class=xl65 width=64 style='width:48pt'>4</td>
+  <td class=xl65 width=64 style='width:48pt'>76</td>
+  <td class=xl65 width=64 style='width:48pt'>19</td>
+  <td class=xl65 width=64 style='width:48pt'>0.1</td>
+  <td class=xl65 width=64 style='width:48pt'>711.2</td>
+  <td class=xl73 width=64 style='width:48pt'>2.3</td>
+ </tr>
+ <tr height=100 style='height:75.0pt'>
+  <td height=100 class=xl74 width=64 style='height:75.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Media%20%20and%20educational%20Service&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Media and educational Service</a></td>
+  <td class=xl66 width=64 style='width:48pt'>0.95</td>
+  <td class=xl66 width=64 style='width:48pt'>1</td>
+  <td class=xl66 width=64 style='width:48pt'>3</td>
+  <td class=xl66 width=64 style='width:48pt'>3</td>
+  <td class=xl66 width=64 style='width:48pt'>0.2</td>
+  <td class=xl66 width=64 style='width:48pt'>28.9</td>
+  <td class=xl75 width=64 style='width:48pt'>0.7</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl72 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Auto%20Parts&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Auto Parts</a></td>
+  <td class=xl65 width=64 style='width:48pt'>0.96</td>
+  <td class=xl65 width=64 style='width:48pt'>31</td>
+  <td class=xl65 width=64 style='width:48pt'>221</td>
+  <td class=xl65 width=64 style='width:48pt'>7</td>
+  <td class=xl65 width=64 style='width:48pt'>0.3</td>
+  <td class=xl65 width=64 style='width:48pt'>58.9</td>
+  <td class=xl73 width=64 style='width:48pt'>1.7</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl74 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Personal%20Services&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Personal Services</a></td>
+  <td class=xl66 width=64 style='width:48pt'>0.96</td>
+  <td class=xl66 width=64 style='width:48pt'>4</td>
+  <td class=xl66 width=64 style='width:48pt'>17</td>
+  <td class=xl66 width=64 style='width:48pt'>4</td>
+  <td class=xl66 width=64 style='width:48pt'>1.1</td>
+  <td class=xl66 width=64 style='width:48pt'>194.4</td>
+  <td class=xl75 width=64 style='width:48pt'>1.9</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl72 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Casinos%20Gaming&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Casinos Gaming</a></td>
+  <td class=xl65 width=64 style='width:48pt'>0.97</td>
+  <td class=xl65 width=64 style='width:48pt'>11</td>
+  <td class=xl65 width=64 style='width:48pt'>88</td>
+  <td class=xl65 width=64 style='width:48pt'>8</td>
+  <td class=xl65 width=64 style='width:48pt'>0.3</td>
+  <td class=xl65 width=64 style='width:48pt'>901.3</td>
+  <td class=xl73 width=64 style='width:48pt'>0.9</td>
+ </tr>
+ <tr height=100 style='height:75.0pt'>
+  <td height=100 class=xl74 width=64 style='height:75.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Photographic%20Equipment%20Supplie&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Photographic Equipment Supplie</a></td>
+  <td class=xl66 width=64 style='width:48pt'>0.98</td>
+  <td class=xl66 width=64 style='width:48pt'>1</td>
+  <td class=xl66 width=64 style='width:48pt'>35</td>
+  <td class=xl66 width=64 style='width:48pt'>35</td>
+  <td class=xl66 width=64 style='width:48pt'>0.2</td>
+  <td class=xl66 width=64 style='width:48pt'>13.5</td>
+  <td class=xl75 width=64 style='width:48pt'>0.9</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl72 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Internet%20Service%20Providers&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Internet Service Providers</a></td>
+  <td class=xl65 width=64 style='width:48pt'>0.99</td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>28</td>
+  <td class=xl65 width=64 style='width:48pt'>28</td>
+  <td class=xl65 width=64 style='width:48pt'>0.7</td>
+  <td class=xl65 width=64 style='width:48pt'>50.2</td>
+  <td class=xl73 width=64 style='width:48pt'>7.7</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl74 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Food%20Wholesale&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Food Wholesale</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1</td>
+  <td class=xl66 width=64 style='width:48pt'>1</td>
+  <td class=xl66 width=64 style='width:48pt'>44</td>
+  <td class=xl66 width=64 style='width:48pt'>44</td>
+  <td class=xl66 width=64 style='width:48pt'>0.1</td>
+  <td class=xl66 width=64 style='width:48pt'>965.4</td>
+  <td class=xl75 width=64 style='width:48pt'>4</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl72 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Music%20Video%20Stores&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Music Video Stores</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>171</td>
+  <td class=xl65 width=64 style='width:48pt'>171</td>
+  <td class=xl65 width=64 style='width:48pt'>0.5</td>
+  <td class=xl65 width=64 style='width:48pt'>0</td>
+  <td class=xl73 width=64 style='width:48pt'>1</td>
+ </tr>
+ <tr height=100 style='height:75.0pt'>
+  <td height=100 class=xl74 width=64 style='height:75.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Apparel%20Footwear%20Accessories&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Apparel Footwear Accessories</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1</td>
+  <td class=xl66 width=64 style='width:48pt'>26</td>
+  <td class=xl66 width=64 style='width:48pt'>517</td>
+  <td class=xl66 width=64 style='width:48pt'>20</td>
+  <td class=xl66 width=64 style='width:48pt'>0.2</td>
+  <td class=xl66 width=64 style='width:48pt'>90.5</td>
+  <td class=xl75 width=64 style='width:48pt'>0.8</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl72 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Department%20Stores&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Department Stores</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>14</td>
+  <td class=xl65 width=64 style='width:48pt'>372</td>
+  <td class=xl65 width=64 style='width:48pt'>27</td>
+  <td class=xl65 width=64 style='width:48pt'>0.2</td>
+  <td class=xl65 width=64 style='width:48pt'>92.1</td>
+  <td class=xl73 width=64 style='width:48pt'>0.9</td>
+ </tr>
+ <tr height=100 style='height:75.0pt'>
+  <td height=100 class=xl74 width=64 style='height:75.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Sports%20Apparel%20and%20Underwear&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Sports Apparel and Underwear</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1</td>
+  <td class=xl66 width=64 style='width:48pt'>5</td>
+  <td class=xl66 width=64 style='width:48pt'>50</td>
+  <td class=xl66 width=64 style='width:48pt'>10</td>
+  <td class=xl66 width=64 style='width:48pt'>0.2</td>
+  <td class=xl66 width=64 style='width:48pt'>340.4</td>
+  <td class=xl75 width=64 style='width:48pt'>0.7</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl72 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Online%20Travel%20Service%20Provider&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Online Travel Service Provider</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>8</td>
+  <td class=xl65 width=64 style='width:48pt'>252</td>
+  <td class=xl65 width=64 style='width:48pt'>32</td>
+  <td class=xl65 width=64 style='width:48pt'>0.9</td>
+  <td class=xl65 width=64 style='width:48pt'>31.3</td>
+  <td class=xl73 width=64 style='width:48pt'>1.1</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl74 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Funeral%20Services%20and%20Related%20I&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Funeral Services and Related I</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.01</td>
+  <td class=xl66 width=64 style='width:48pt'>3</td>
+  <td class=xl66 width=64 style='width:48pt'>10</td>
+  <td class=xl66 width=64 style='width:48pt'>3</td>
+  <td class=xl66 width=64 style='width:48pt'>1.1</td>
+  <td class=xl66 width=64 style='width:48pt'>474.4</td>
+  <td class=xl75 width=64 style='width:48pt'>1.1</td>
+ </tr>
+ <tr height=100 style='height:75.0pt'>
+  <td height=100 class=xl72 width=64 style='height:75.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Electronic%20Equipment/Products&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Electronic Equipment/Products</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.01</td>
+  <td class=xl65 width=64 style='width:48pt'>16</td>
+  <td class=xl65 width=64 style='width:48pt'>337</td>
+  <td class=xl65 width=64 style='width:48pt'>21</td>
+  <td class=xl65 width=64 style='width:48pt'>0.2</td>
+  <td class=xl65 width=64 style='width:48pt'>32.1</td>
+  <td class=xl73 width=64 style='width:48pt'>1.8</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl74 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=leisure%20&amp;%20recreation%20services&amp;Sector=Consumer%20Discretionary"
+  target="_parent">leisure &amp; recreation services</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.01</td>
+  <td class=xl66 width=64 style='width:48pt'>4</td>
+  <td class=xl66 width=64 style='width:48pt'>18</td>
+  <td class=xl66 width=64 style='width:48pt'>4</td>
+  <td class=xl66 width=64 style='width:48pt'>0.5</td>
+  <td class=xl66 width=64 style='width:48pt'>894.5</td>
+  <td class=xl75 width=64 style='width:48pt'>0.9</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl72 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Departmental%20Stores&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Departmental Stores</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.01</td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>8</td>
+  <td class=xl65 width=64 style='width:48pt'>8</td>
+  <td class=xl65 width=64 style='width:48pt'>0.3</td>
+  <td class=xl65 width=64 style='width:48pt'>39.2</td>
+  <td class=xl73 width=64 style='width:48pt'>1.3</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl74 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Office%20Supplies&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Office Supplies</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.02</td>
+  <td class=xl66 width=64 style='width:48pt'>1</td>
+  <td class=xl66 width=64 style='width:48pt'>12</td>
+  <td class=xl66 width=64 style='width:48pt'>12</td>
+  <td class=xl66 width=64 style='width:48pt'>0.2</td>
+  <td class=xl66 width=64 style='width:48pt'>34.6</td>
+  <td class=xl75 width=64 style='width:48pt'>5.3</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl72 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Entertainment%20-%20Diversified&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Entertainment - Diversified</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.02</td>
+  <td class=xl65 width=64 style='width:48pt'>4</td>
+  <td class=xl65 width=64 style='width:48pt'>280</td>
+  <td class=xl65 width=64 style='width:48pt'>70</td>
+  <td class=xl65 width=64 style='width:48pt'>0.4</td>
+  <td class=xl65 width=64 style='width:48pt'>16.7</td>
+  <td class=xl73 width=64 style='width:48pt'>1.3</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl74 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Auto%20Manufacturers%20-%20Major&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Auto Manufacturers - Major</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.02</td>
+  <td class=xl66 width=64 style='width:48pt'>15</td>
+  <td class=xl66 width=64 style='width:48pt'>560</td>
+  <td class=xl66 width=64 style='width:48pt'>37</td>
+  <td class=xl66 width=64 style='width:48pt'>0.4</td>
+  <td class=xl66 width=64 style='width:48pt'>44.6</td>
+  <td class=xl75 width=64 style='width:48pt'>1.3</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl72 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Sporting%20Goods%20Stores&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Sporting Goods Stores</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.02</td>
+  <td class=xl65 width=64 style='width:48pt'>4</td>
+  <td class=xl65 width=64 style='width:48pt'>7</td>
+  <td class=xl65 width=64 style='width:48pt'>2</td>
+  <td class=xl65 width=64 style='width:48pt'>0</td>
+  <td class=xl65 width=64 style='width:48pt'>561.6</td>
+  <td class=xl73 width=64 style='width:48pt'>0.7</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl74 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Restaurants&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Restaurants</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.02</td>
+  <td class=xl66 width=64 style='width:48pt'>11</td>
+  <td class=xl66 width=64 style='width:48pt'>21</td>
+  <td class=xl66 width=64 style='width:48pt'>2</td>
+  <td class=xl66 width=64 style='width:48pt'>0.9</td>
+  <td class=xl66 width=64 style='width:48pt'>1279.1</td>
+  <td class=xl75 width=64 style='width:48pt'>0.8</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl72 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Movie%20Production&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Movie Production</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.04</td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>2</td>
+  <td class=xl65 width=64 style='width:48pt'>2</td>
+  <td class=xl65 width=64 style='width:48pt'>0.5</td>
+  <td class=xl65 width=64 style='width:48pt'>394.6</td>
+  <td class=xl73 width=64 style='width:48pt'>0.8</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl74 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Consumer%20Discretionary&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Consumer Discretionary</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.04</td>
+  <td class=xl66 width=64 style='width:48pt'>2</td>
+  <td class=xl66 width=64 style='width:48pt'>238</td>
+  <td class=xl66 width=64 style='width:48pt'>119</td>
+  <td class=xl66 width=64 style='width:48pt'>0</td>
+  <td class=xl66 width=64 style='width:48pt'>34.8</td>
+  <td class=xl75 width=64 style='width:48pt'>1.1</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl72 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Wireless%20Communications&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Wireless Communications</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.05</td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>515</td>
+  <td class=xl65 width=64 style='width:48pt'>515</td>
+  <td class=xl65 width=64 style='width:48pt'>0.5</td>
+  <td class=xl65 width=64 style='width:48pt'>81.9</td>
+  <td class=xl73 width=64 style='width:48pt'>9.4</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl74 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Resorts%20Casinos&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Resorts Casinos</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.06</td>
+  <td class=xl66 width=64 style='width:48pt'>11</td>
+  <td class=xl66 width=64 style='width:48pt'>137</td>
+  <td class=xl66 width=64 style='width:48pt'>12</td>
+  <td class=xl66 width=64 style='width:48pt'>1.2</td>
+  <td class=xl66 width=64 style='width:48pt'>27</td>
+  <td class=xl75 width=64 style='width:48pt'>1.3</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl72 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Textiles%20&amp;%20Leather%20Goods&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Textiles &amp; Leather Goods</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.07</td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>2</td>
+  <td class=xl65 width=64 style='width:48pt'>2</td>
+  <td class=xl65 width=64 style='width:48pt'>0.4</td>
+  <td class=xl65 width=64 style='width:48pt'>15.7</td>
+  <td class=xl73 width=64 style='width:48pt'>1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl74 width=64 style='height:15.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Lodging&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Lodging</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.08</td>
+  <td class=xl66 width=64 style='width:48pt'>6</td>
+  <td class=xl66 width=64 style='width:48pt'>22</td>
+  <td class=xl66 width=64 style='width:48pt'>4</td>
+  <td class=xl66 width=64 style='width:48pt'>1.2</td>
+  <td class=xl66 width=64 style='width:48pt'>93.5</td>
+  <td class=xl75 width=64 style='width:48pt'>1.1</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl72 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Broadcasting%20Cable%20TV&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Broadcasting Cable TV</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.09</td>
+  <td class=xl65 width=64 style='width:48pt'>6</td>
+  <td class=xl65 width=64 style='width:48pt'>137</td>
+  <td class=xl65 width=64 style='width:48pt'>23</td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>464.4</td>
+  <td class=xl73 width=64 style='width:48pt'>0.9</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl74 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Cruise%20Lines&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Cruise Lines</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.1</td>
+  <td class=xl66 width=64 style='width:48pt'>3</td>
+  <td class=xl66 width=64 style='width:48pt'>74</td>
+  <td class=xl66 width=64 style='width:48pt'>25</td>
+  <td class=xl66 width=64 style='width:48pt'>0.8</td>
+  <td class=xl66 width=64 style='width:48pt'>20.6</td>
+  <td class=xl75 width=64 style='width:48pt'>1.1</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl72 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Gaming%20Software&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Gaming Software</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.11</td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>159</td>
+  <td class=xl65 width=64 style='width:48pt'>159</td>
+  <td class=xl65 width=64 style='width:48pt'>0.2</td>
+  <td class=xl65 width=64 style='width:48pt'>60</td>
+  <td class=xl73 width=64 style='width:48pt'>8.3</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl74 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Grocery%20Stores&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Grocery Stores</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.12</td>
+  <td class=xl66 width=64 style='width:48pt'>3</td>
+  <td class=xl66 width=64 style='width:48pt'>213</td>
+  <td class=xl66 width=64 style='width:48pt'>71</td>
+  <td class=xl66 width=64 style='width:48pt'>0.2</td>
+  <td class=xl66 width=64 style='width:48pt'>232</td>
+  <td class=xl75 width=64 style='width:48pt'>3.5</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl72 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Publishing%20-%20Periodicals&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Publishing - Periodicals</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.14</td>
+  <td class=xl65 width=64 style='width:48pt'>2</td>
+  <td class=xl65 width=64 style='width:48pt'>45</td>
+  <td class=xl65 width=64 style='width:48pt'>22</td>
+  <td class=xl65 width=64 style='width:48pt'>2.2</td>
+  <td class=xl65 width=64 style='width:48pt'>25.4</td>
+  <td class=xl73 width=64 style='width:48pt'>1.1</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl74 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Broadcasting%20-%20Radio/TV&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Broadcasting - Radio/TV</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.14</td>
+  <td class=xl66 width=64 style='width:48pt'>3</td>
+  <td class=xl66 width=64 style='width:48pt'>30</td>
+  <td class=xl66 width=64 style='width:48pt'>10</td>
+  <td class=xl66 width=64 style='width:48pt'>0.5</td>
+  <td class=xl66 width=64 style='width:48pt'>744.1</td>
+  <td class=xl75 width=64 style='width:48pt'>1.1</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl72 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Printing%20Publishing&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Printing Publishing</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.15</td>
+  <td class=xl65 width=64 style='width:48pt'>5</td>
+  <td class=xl65 width=64 style='width:48pt'>23</td>
+  <td class=xl65 width=64 style='width:48pt'>5</td>
+  <td class=xl65 width=64 style='width:48pt'>0.3</td>
+  <td class=xl65 width=64 style='width:48pt'>1424.6</td>
+  <td class=xl73 width=64 style='width:48pt'>1</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl74 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Recreational%20Vehicles&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Recreational Vehicles</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.16</td>
+  <td class=xl66 width=64 style='width:48pt'>6</td>
+  <td class=xl66 width=64 style='width:48pt'>40</td>
+  <td class=xl66 width=64 style='width:48pt'>7</td>
+  <td class=xl66 width=64 style='width:48pt'>0.2</td>
+  <td class=xl66 width=64 style='width:48pt'>26.5</td>
+  <td class=xl75 width=64 style='width:48pt'>1.8</td>
+ </tr>
+ <tr height=100 style='height:75.0pt'>
+  <td height=100 class=xl72 width=64 style='height:75.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Internet%20Information%20Providers&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Internet Information Providers</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.2</td>
+  <td class=xl65 width=64 style='width:48pt'>2</td>
+  <td class=xl67 width=64 style='width:48pt'>2,582</td>
+  <td class=xl67 width=64 style='width:48pt'>1,291</td>
+  <td class=xl65 width=64 style='width:48pt'>0.2</td>
+  <td class=xl65 width=64 style='width:48pt'>333.9</td>
+  <td class=xl73 width=64 style='width:48pt'>15.5</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl74 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Broadcasting%20-%20TV&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Broadcasting - TV</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.2</td>
+  <td class=xl66 width=64 style='width:48pt'>11</td>
+  <td class=xl66 width=64 style='width:48pt'>35</td>
+  <td class=xl66 width=64 style='width:48pt'>3</td>
+  <td class=xl66 width=64 style='width:48pt'>0.9</td>
+  <td class=xl66 width=64 style='width:48pt'>15.4</td>
+  <td class=xl75 width=64 style='width:48pt'>1.2</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl72 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Auto%20Parts%20Stores&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Auto Parts Stores</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.2</td>
+  <td class=xl65 width=64 style='width:48pt'>4</td>
+  <td class=xl65 width=64 style='width:48pt'>54</td>
+  <td class=xl65 width=64 style='width:48pt'>14</td>
+  <td class=xl65 width=64 style='width:48pt'>0.2</td>
+  <td class=xl65 width=64 style='width:48pt'>202.1</td>
+  <td class=xl73 width=64 style='width:48pt'>0.9</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl74 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Auto%20Dealerships&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Auto Dealerships</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.22</td>
+  <td class=xl66 width=64 style='width:48pt'>12</td>
+  <td class=xl66 width=64 style='width:48pt'>54</td>
+  <td class=xl66 width=64 style='width:48pt'>4</td>
+  <td class=xl66 width=64 style='width:48pt'>0.3</td>
+  <td class=xl66 width=64 style='width:48pt'>262.3</td>
+  <td class=xl75 width=64 style='width:48pt'>1.3</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl72 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Electronics%20Stores&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Electronics Stores</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.25</td>
+  <td class=xl65 width=64 style='width:48pt'>4</td>
+  <td class=xl65 width=64 style='width:48pt'>29</td>
+  <td class=xl65 width=64 style='width:48pt'>7</td>
+  <td class=xl65 width=64 style='width:48pt'>0.1</td>
+  <td class=xl65 width=64 style='width:48pt'>22.6</td>
+  <td class=xl73 width=64 style='width:48pt'>0.5</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl74 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Entertainment%20production&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Entertainment production</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.28</td>
+  <td class=xl66 width=64 style='width:48pt'>1</td>
+  <td class=xl66 width=64 style='width:48pt'>6</td>
+  <td class=xl66 width=64 style='width:48pt'>6</td>
+  <td class=xl66 width=64 style='width:48pt'>0</td>
+  <td class=xl66 width=64 style='width:48pt'>41</td>
+  <td class=xl75 width=64 style='width:48pt'>1</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl72 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Home%20Improvement%20Stores&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Home Improvement Stores</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.3</td>
+  <td class=xl65 width=64 style='width:48pt'>6</td>
+  <td class=xl65 width=64 style='width:48pt'>348</td>
+  <td class=xl65 width=64 style='width:48pt'>58</td>
+  <td class=xl65 width=64 style='width:48pt'>0.2</td>
+  <td class=xl65 width=64 style='width:48pt'>1131</td>
+  <td class=xl73 width=64 style='width:48pt'>1.1</td>
+ </tr>
+ <tr height=100 style='height:75.0pt'>
+  <td height=100 class=xl74 width=64 style='height:75.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Industrial%20Electrical%20Equipmen&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Industrial Electrical Equipmen</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.32</td>
+  <td class=xl66 width=64 style='width:48pt'>1</td>
+  <td class=xl66 width=64 style='width:48pt'>268</td>
+  <td class=xl66 width=64 style='width:48pt'>268</td>
+  <td class=xl66 width=64 style='width:48pt'>0.3</td>
+  <td class=xl66 width=64 style='width:48pt'>32.5</td>
+  <td class=xl75 width=64 style='width:48pt'>27.3</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl72 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Air%20Conditioning%20and%20Refrigera&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Air Conditioning and Refrigera</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.32</td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>8</td>
+  <td class=xl65 width=64 style='width:48pt'>8</td>
+  <td class=xl65 width=64 style='width:48pt'>0</td>
+  <td class=xl65 width=64 style='width:48pt'>41.8</td>
+  <td class=xl73 width=64 style='width:48pt'>1.6</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl74 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Business%20Services%20-%20Catering&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Business Services - Catering</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.33</td>
+  <td class=xl66 width=64 style='width:48pt'>2</td>
+  <td class=xl66 width=64 style='width:48pt'>58</td>
+  <td class=xl66 width=64 style='width:48pt'>29</td>
+  <td class=xl66 width=64 style='width:48pt'>0.2</td>
+  <td class=xl66 width=64 style='width:48pt'>1130.6</td>
+  <td class=xl75 width=64 style='width:48pt'>1.3</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl72 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=automobile%20accessories&amp;Sector=Consumer%20Discretionary"
+  target="_parent">automobile accessories</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.33</td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>7</td>
+  <td class=xl65 width=64 style='width:48pt'>7</td>
+  <td class=xl65 width=64 style='width:48pt'>0</td>
+  <td class=xl65 width=64 style='width:48pt'>16.1</td>
+  <td class=xl73 width=64 style='width:48pt'>1.2</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl74 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Equipment%20Manufacturing&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Equipment Manufacturing</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.34</td>
+  <td class=xl66 width=64 style='width:48pt'>2</td>
+  <td class=xl66 width=64 style='width:48pt'>65</td>
+  <td class=xl66 width=64 style='width:48pt'>32</td>
+  <td class=xl66 width=64 style='width:48pt'>0.2</td>
+  <td class=xl66 width=64 style='width:48pt'>24.9</td>
+  <td class=xl75 width=64 style='width:48pt'>3.2</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl72 width=64 style='height:15.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Tires&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Tires</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.36</td>
+  <td class=xl65 width=64 style='width:48pt'>4</td>
+  <td class=xl65 width=64 style='width:48pt'>78</td>
+  <td class=xl65 width=64 style='width:48pt'>20</td>
+  <td class=xl65 width=64 style='width:48pt'>0.3</td>
+  <td class=xl65 width=64 style='width:48pt'>25.6</td>
+  <td class=xl73 width=64 style='width:48pt'>1</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl74 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Tyres%20and%20rubber%20products&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Tyres and rubber products</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.39</td>
+  <td class=xl66 width=64 style='width:48pt'>1</td>
+  <td class=xl66 width=64 style='width:48pt'>6</td>
+  <td class=xl66 width=64 style='width:48pt'>6</td>
+  <td class=xl66 width=64 style='width:48pt'>0.5</td>
+  <td class=xl66 width=64 style='width:48pt'>11.9</td>
+  <td class=xl75 width=64 style='width:48pt'>1.7</td>
+ </tr>
+ <tr height=100 style='height:75.0pt'>
+  <td height=100 class=xl72 width=64 style='height:75.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Farm%20Construction%20Machinery&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Farm Construction Machinery</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.43</td>
+  <td class=xl65 width=64 style='width:48pt'>2</td>
+  <td class=xl65 width=64 style='width:48pt'>108</td>
+  <td class=xl65 width=64 style='width:48pt'>54</td>
+  <td class=xl65 width=64 style='width:48pt'>0.4</td>
+  <td class=xl65 width=64 style='width:48pt'>27.9</td>
+  <td class=xl73 width=64 style='width:48pt'>5.6</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl74 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Education%20Training%20Services&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Education Training Services</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.47</td>
+  <td class=xl66 width=64 style='width:48pt'>9</td>
+  <td class=xl66 width=64 style='width:48pt'>29</td>
+  <td class=xl66 width=64 style='width:48pt'>3</td>
+  <td class=xl66 width=64 style='width:48pt'>0.1</td>
+  <td class=xl66 width=64 style='width:48pt'>30.5</td>
+  <td class=xl75 width=64 style='width:48pt'>1</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl72 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Apparel%20Stores&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Apparel Stores</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.48</td>
+  <td class=xl65 width=64 style='width:48pt'>26</td>
+  <td class=xl65 width=64 style='width:48pt'>122</td>
+  <td class=xl65 width=64 style='width:48pt'>5</td>
+  <td class=xl65 width=64 style='width:48pt'>0.1</td>
+  <td class=xl65 width=64 style='width:48pt'>119.4</td>
+  <td class=xl73 width=64 style='width:48pt'>1</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl74 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Broadcasting%20-%20Radio&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Broadcasting - Radio</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.51</td>
+  <td class=xl66 width=64 style='width:48pt'>4</td>
+  <td class=xl66 width=64 style='width:48pt'>32</td>
+  <td class=xl66 width=64 style='width:48pt'>8</td>
+  <td class=xl66 width=64 style='width:48pt'>1.3</td>
+  <td class=xl66 width=64 style='width:48pt'>17.4</td>
+  <td class=xl75 width=64 style='width:48pt'>1.1</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl72 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Broadcasting%20-%20TV%20Stations&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Broadcasting - TV Stations</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.53</td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>1.9</td>
+  <td class=xl65 width=64 style='width:48pt'>392.5</td>
+  <td class=xl73 width=64 style='width:48pt'>2.3</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl74 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Fashion%20Apparel&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Fashion Apparel</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.58</td>
+  <td class=xl66 width=64 style='width:48pt'>8</td>
+  <td class=xl66 width=64 style='width:48pt'>23</td>
+  <td class=xl66 width=64 style='width:48pt'>3</td>
+  <td class=xl66 width=64 style='width:48pt'>0.7</td>
+  <td class=xl66 width=64 style='width:48pt'>1136.1</td>
+  <td class=xl75 width=64 style='width:48pt'>0.9</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl72 width=64 style='height:30.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=satellite%20services&amp;Sector=Consumer%20Discretionary"
+  target="_parent">satellite services</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.6</td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>12</td>
+  <td class=xl65 width=64 style='width:48pt'>12</td>
+  <td class=xl65 width=64 style='width:48pt'>2.5</td>
+  <td class=xl65 width=64 style='width:48pt'>10.7</td>
+  <td class=xl73 width=64 style='width:48pt'>1.2</td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl74 width=64 style='height:60.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Consumer%20Products%20-%20Misc%20&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Consumer Products - Misc</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.64</td>
+  <td class=xl66 width=64 style='width:48pt'>1</td>
+  <td class=xl66 width=64 style='width:48pt'>92</td>
+  <td class=xl66 width=64 style='width:48pt'>92</td>
+  <td class=xl66 width=64 style='width:48pt'>0</td>
+  <td class=xl66 width=64 style='width:48pt'>183</td>
+  <td class=xl75 width=64 style='width:48pt'>1</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl72 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Textile%20Apparel%20Clothing&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Textile Apparel Clothing</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.66</td>
+  <td class=xl65 width=64 style='width:48pt'>2</td>
+  <td class=xl65 width=64 style='width:48pt'>108</td>
+  <td class=xl65 width=64 style='width:48pt'>54</td>
+  <td class=xl65 width=64 style='width:48pt'>0.1</td>
+  <td class=xl65 width=64 style='width:48pt'>34.4</td>
+  <td class=xl73 width=64 style='width:48pt'>0.8</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl74 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Sporting%20Activities&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Sporting Activities</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.68</td>
+  <td class=xl66 width=64 style='width:48pt'>2</td>
+  <td class=xl66 width=64 style='width:48pt'>3</td>
+  <td class=xl66 width=64 style='width:48pt'>2</td>
+  <td class=xl66 width=64 style='width:48pt'>0.4</td>
+  <td class=xl66 width=64 style='width:48pt'>15.4</td>
+  <td class=xl75 width=64 style='width:48pt'>1.1</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl72 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Recreational%20Products&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Recreational Products</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.69</td>
+  <td class=xl65 width=64 style='width:48pt'>1</td>
+  <td class=xl65 width=64 style='width:48pt'>8</td>
+  <td class=xl65 width=64 style='width:48pt'>8</td>
+  <td class=xl65 width=64 style='width:48pt'>0.1</td>
+  <td class=xl65 width=64 style='width:48pt'>88.9</td>
+  <td class=xl73 width=64 style='width:48pt'>1.9</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl74 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Auction%20House/Art%20Dealer&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Auction House/Art Dealer</a></td>
+  <td class=xl66 width=64 style='width:48pt'>1.74</td>
+  <td class=xl66 width=64 style='width:48pt'>1</td>
+  <td class=xl66 width=64 style='width:48pt'>4</td>
+  <td class=xl66 width=64 style='width:48pt'>4</td>
+  <td class=xl66 width=64 style='width:48pt'>1.1</td>
+  <td class=xl66 width=64 style='width:48pt'>45.2</td>
+  <td class=xl75 width=64 style='width:48pt'>1.7</td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl72 width=64 style='height:45.0pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=General%20Entertainment&amp;Sector=Consumer%20Discretionary"
+  target="_parent">General Entertainment</a></td>
+  <td class=xl65 width=64 style='width:48pt'>1.76</td>
+  <td class=xl65 width=64 style='width:48pt'>6</td>
+  <td class=xl65 width=64 style='width:48pt'>98</td>
+  <td class=xl65 width=64 style='width:48pt'>16</td>
+  <td class=xl65 width=64 style='width:48pt'>0.8</td>
+  <td class=xl65 width=64 style='width:48pt'>297.2</td>
+  <td class=xl73 width=64 style='width:48pt'>0.8</td>
+ </tr>
+ <tr height=41 style='height:30.75pt'>
+  <td height=41 class=xl76 width=64 style='height:30.75pt;width:48pt'><a
+  href="http://rationalinvesting.com/ValuationModels.aspx?Industry=Personal%20Products&amp;Sector=Consumer%20Discretionary"
+  target="_parent">Personal Products</a></td>
+  <td class=xl77 width=64 style='width:48pt'>1.77</td>
+  <td class=xl77 width=64 style='width:48pt'>4</td>
+  <td class=xl77 width=64 style='width:48pt'>812</td>
+  <td class=xl77 width=64 style='width:48pt'>203</td>
+  <td class=xl77 width=64 style='width:48pt'>0.5</td>
+  <td class=xl77 width=64 style='width:48pt'>126</td>
+  <td class=xl78 width=64 style='width:48pt'>4.4</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+ </tr>
+ <![endif]>
+</table>
+</div>
+
+      <hr class="featurette-divider">
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="https://getbootstrap.com/2.3.2/examples/carousel.html#">Back to top</a></p>
+        <p>· © 1998-2018 Rational Investing · <a href="https://getbootstrap.com/2.3.2/examples/carousel.html#">Privacy</a> · <a href="https://getbootstrap.com/2.3.2/examples/carousel.html#">Terms</a></p>
+      </footer>
+
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery.js.download"></script>
+    <script src="./js/bootstrap-transition.js.download"></script>
+    <script src="./js/bootstrap-alert.js.download"></script>
+    <script src="./js/bootstrap-modal.js.download"></script>
+    <script src="./js/bootstrap-dropdown.js.download"></script>
+    <script src="./js/bootstrap-scrollspy.js.download"></script>
+    <script src="./js/bootstrap-tab.js.download"></script>
+    <script src="./js/bootstrap-tooltip.js.download"></script>
+    <script src="./js/bootstrap-popover.js.download"></script>
+    <script src="./js/bootstrap-button.js.download"></script>
+    <script src="./js/bootstrap-collapse.js.download"></script>
+    <script src="./js/bootstrap-carousel.js.download"></script>
+    <script src="./js/bootstrap-typeahead.js.download"></script>
+    <script language="javascript" type="text/javascript" src="flot/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="flot/jquery.flot.js"></script>
+
+    <script src="./js/holder.js.download"></script>
+  
+
+<div id="pmo-dp-content-hook" style="display: none; width: 1px; height: 1px;"></div></body></html>

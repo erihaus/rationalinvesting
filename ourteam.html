@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://getbootstrap.com/2.3.2/examples/carousel.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Palanquin" rel="stylesheet"> 
+    <!-- Le styles -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|PT+Sans+Narrow|Palanquin:100" rel="stylesheet"> 
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      /*background-color: #e9f5e1; light green */
+     /* background-color: #e9f0e9; light gray */
+     /*background-color: #fceab6; beige */
+   }
+
+   h3,h4 {
+    text-align: center;
+   }
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 0px; /* Increase vertical padding to match navbar links */
+      font-size: 25px;
+      text-align: center;
+      margin-top: 29px;
+      margin-right: 12px;
+      font-weight: bold;
+      font-family: 'Cinzel Decorative', sans-serif;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+    .dropdown-menu {
+      list-style-type: none;
+    }
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+      color: gray;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+    br {
+      height: 5px;
+    }
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+
+    .carousel .item {
+      height: 500px;
+    }
+    #row2 {
+      margin: 5%;
+      margin-left:15%;
+      margin-bottom: 0%;
+    }
+    img {
+      margin-left: auto;
+      margin-right: auto;
+      width: 25%;
+      display: block;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    h1 {
+      margin-top: 6%;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      font-family: 'Palanquin', sans-serif;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: bold;
+      font-family: 'Palanquin',sans-serif;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+    .img-circle {
+      height: 140px;
+      width: auto;
+    }
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 100px
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 3;
+      }
+
+    }
+#intro {
+  margin-top: 100px;
+  text-align: center;
+  font-family: 'Palanquin', sans-serif;
+  height: 200px;
+  background: linear-gradient(to right, rgba(125,154,184,0), rgba(125,154,184,1));
+  /*background: linear-gradient(to right, rgba(150, 18, 18, 0.5),rgba(128, 15, 15, 1)); burgundy */
+}
+.container-fluid .row h3 {
+  margin: 5%;
+}
+.container.marketing .row {
+  margin-top: -50px;
+}
+.navbar.transparent.navbar-default .navbar-inner {
+  position: static;
+  border-width: 0px;
+  -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+   background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%); */
+
+}
+.featurette p {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container.marketing {
+  margin-top: 100px;
+}
+ul {
+  margin-top: 40px;
+}
+li {
+  line-height: 50px;
+}
+.featurette {
+  margin-top: -125px;
+}
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="https://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="https://getbootstrap.com/2.3.2/assets/ico/favicon.png">
+ </head>
+
+  <body>
+
+
+<div class="top">
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container-fluid">
+
+        <div class="navbar transparent navbar-default">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" style="color: black; font-weight: bold; text-shadow: none;" href="index.html">Rational Investing</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+             <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                     <li>
+                      <a href="valuation.html">Valuation</a>
+                     </li>
+
+                  <li class="dropdown">
+                  <a href="https://getbootstrap.com/2.3.2/examples/carousel.html#" class="dropdown-toggle" data-toggle="dropdown">Coverage<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="ourteam.html">Industry Sector</a></li>
+                    <li><a href="https://getbootstrap.com/2.3.2/examples/carousel.html#">Global Region</a></li>
+                    <li><a href="https://getbootstrap.com/2.3.2/examples/carousel.html#">Exchange Traded Funds</a></li>
+                    <li><a href="https://getbootstrap.com/2.3.2/examples/carousel.html#">Tutorial</a></li>
+                  </ul>
+                </li>
+                  <li class="dropdown">
+                  <a href="https://getbootstrap.com/2.3.2/examples/carousel.html#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="ourteam.html">Our Team</a></li>
+                    <li><a href="https://getbootstrap.com/2.3.2/examples/carousel.html#">Our Mission</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Nav header</li>
+                    <li><a href="https://getbootstrap.com/2.3.2/examples/carousel.html#">Separated link</a></li>
+                    <li><a href="https://getbootstrap.com/2.3.2/examples/carousel.html#">One more separated link</a></li>
+                  </ul>
+                </li>
+                <li><a href="https://getbootstrap.com/2.3.2/examples/carousel.html#contact">Contact</a></li>
+                <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
+
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+</div><!-- /.top -->
+<div class="container-fluid" id="intro">
+<div class="row">
+<h1> Our Team </h1>
+</div>
+</div>
+
+    <!-- Carousel
+    ================================================== -->
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+          <img class="img-circle" src='holder.js/140x140'>
+          <h2>Manish Aurora</h2>
+          <p>Managing Director, Methodology and Product Architecture</p>
+          <p><a class="btn" href="#section1">Read more »</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" src="holder.js/140x140">
+          <h2>Harbhajan Aurora</h2>
+          <p>Founding Principal, Technology and Research Management</p>
+          <p><a class="btn" href="#section2">Read more »</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" src="holder.js/140x140">
+          <h2>Pieter Hellquist</h2>
+          <p>Principal, Fundamental and Valuation Research</p>
+          <p><a class="btn" href="#section3">Read more »</a></p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+
+      <div class="row" id="row2">
+        <div class="span4">
+          <img class="img-circle" src="holder.js/140x140">
+          <h2>Daniel Savage</h2>
+          <p>Systematic Trading and Fundamental Algorithms</p>
+          <p><a class="btn" href="#section4">Read more »</a></p>
+        </div><!-- /.span4 -->
+                <div class="span4">
+          <img class="img-circle" src="holder.js/140x140">
+          <h2>Iwona Bujak</h2>
+          <p>Portfolio Systems and Trade Algo Testing</p>
+          <p><a class="btn" href="#section5">Read more »</a></p>
+        </div><!-- /.span4 -->
+
+      </div><!-- /.row -->
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img src="images/placeholder.png" id="section1">
+        <h3>Manish Aurora<br></h3><h4>Managing Principal •<span class="muted"> Methodology and Product Architecture</span></h4>
+        <p>Manish Aurora co-founded Rational Investing LLC and built its first valuations starting in 1998. The firm he established now consists of over 20 professionals who are responsible for modeling the G7 and MSCI World markets. Aurora also designed and developed the FX trading platform of FXCM (www.fxcm.com), which is now the world’s largest non-bank online FX dealer. Additionally, Mr. Aurora converted Merrill’s European FX derivatives exposure at the New York City, London, and Singapore offices to the Euro. At JP Morgan, Manish reprogrammed global swaps pricing and counterparty credit risk calculation using Massively Parallel Supercomputing technology. For the merger of Chase and Chemical, the biggest bank merger ever, Manish designed the Value at Risk calculator under a tight deadline from the Federal Reserve. At BlackRock, he designed and constructed its first CMBS and Corporate Bond credit risk models. Aurora worked as a sell-side analyst at Nomura Securities, where he covered real estate equity, debt, CMBS. Lastly, he built the first commercial paper direct issuance and investment management and reporting system for GE Capital, ITT, and Ford at Financial Sciences. Manish Aurora has an M.B.A. from the University of Chicago and a B.S. in computer science from the University of Scranton. </p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img src="images/placeholder.png" id="section2">
+        <h3>Harbhajan Aurora<br></h3><h4>Founding Principal •<span class="muted"> Technology and Research Management</span></h4>
+        <p>At Rational Investing LLC, Harbhajan Aurora recruits and trains the analyst and software engineering teams in corporate finance in Bombay, India. With Manish Aurora, he co-founded Rational Investing and, since 1999, has overseen the firm's analyst team. He was instrumental in creating the valuation and data normalization processes of the company's equity valuation system. At FXCM, Aurora coordinated the development of the company's trading platform and oversaw its test team. He was also the principal of a textile manufacturing and trading business for 20 years in Bombay and Surat. While working at Chicago Pneumatic, he led the North Indian marketing and sales department, managing 30 professionals selling machinery for large-scale infrastructure projects of national importance. He received a B.S.E. from the University of Punjab, where he broke the state record for mathematics proficiency.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img src="images/placeholder.png" id="section3">
+        <h3>Pieter Hellquist<br></h3><h4>Principal •<span class="muted"> Fundamental and Valuation Research</span></h4>
+        <p> Pieter oversees the review of 2,500 Standard DCF valuations produced quarterly at Rational Investing. He also oversees supporting fundamental research conducted by the offshore team. Previously in his career, he served as Head of International Operations for Velocity, a provider of electronic trading systems. Additionally, he was Global Product Manager of Citibank's cross border equities data and trading systems. At Citibank he also was Senior Manager for its e-commerce in Europe and FX trading systems out of Australia. In London, he was Marketing Manager of Information Products for the Northern Europe division of Reuters. During his time as Marketing Director in Japan, he built $100+ million (USD) practically from scratch. Hellquist received his M.B.A from INSEAD and his Masters in Engineering from Lund university in Sweden. He also studied for a year at the Ecole Centrale de Paris.  </p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img src="images/placeholder.png" id="section4">
+        <h3>Daniel Savage<br></h3><h4><span class="muted">Systematic Trading and Fundamental Algorithms</span></h4>
+        <p>Daniel Savage developed the trading platform for U.S. Interest Rate Options at a bulge bracket firm. He also advised the Prime Broker margin unit at Credit Suisse during the 2008 market event. At Prudential Insurance, he designed the credit risk management systems of the Global Derivatives unit. At Prudential Securities, he served as Senior Vice President of Corporate Risk. Savage also started as a runner at the AMEX for Timber Hill, the forerunner firm of Interactive Brokers. During the 1987 crash, Savage was trading the MMI futures in the CBOT pits. He later worked in the OEX pits at the CBOE and the FX Futures Pits at the CME. After earning his M.B.A., Daniel Savage joined First Boston in New York as a cash equities OTC trader. Savage received his M.B.A. from the University of Chicago and his B.S. from Northwestern University. </p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img src="images/placeholder.png" id="section5">
+        <h3>Iwona Bujak<br></h3><h4><span class="muted">Portfolio Systems and Trade Algo Testing</span></h4>
+        <p>Iwona Bujak monitors U.S., European, and Japanese tracking portfolios of Rational Investing for corporate events and stops and coordinates all support for broker API's and risk reports. She is also responsible for testing all portfolio construction and execution systems, and performance measurements. Bujak started her career conducting market research on Enterprise Systems for D.H. Brown Associates. Iwona received her M.B.A. and B.S. in information systems from the City University of New York. </p>
+      </div>
+      <!-- /END THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="https://getbootstrap.com/2.3.2/examples/carousel.html#">Back to top</a></p>
+        <p>· © 1998-2018 Rational Investing · <a href="https://getbootstrap.com/2.3.2/examples/carousel.html#">Privacy</a> · <a href="https://getbootstrap.com/2.3.2/examples/carousel.html#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery.js.download"></script>
+    <script src="./js/bootstrap-transition.js.download"></script>
+    <script src="./js/bootstrap-alert.js.download"></script>
+    <script src="./js/bootstrap-modal.js.download"></script>
+    <script src="./js/bootstrap-dropdown.js.download"></script>
+    <script src="./js/bootstrap-scrollspy.js.download"></script>
+    <script src="./js/bootstrap-tab.js.download"></script>
+    <script src="./js/bootstrap-tooltip.js.download"></script>
+    <script src="./js/bootstrap-popover.js.download"></script>
+    <script src="./js/bootstrap-button.js.download"></script>
+    <script src="./js/bootstrap-collapse.js.download"></script>
+    <script src="./js/bootstrap-carousel.js.download"></script>
+    <script src="./js/bootstrap-typeahead.js.download"></script>
+    <script language="javascript" type="text/javascript" src="flot/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="flot/jquery.flot.js"></script>
+
+    <script src="./js/holder.js.download"></script>
+  
+
+<div id="pmo-dp-content-hook" style="display: none; width: 1px; height: 1px;"></div></body></html>

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://getbootstrap.com/2.3.2/examples/carousel.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="https://fonts.googleapis.com/css?family=Palanquin" rel="stylesheet"> 
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|PT+Sans+Narrow|Palanquin:100" rel="stylesheet"> 
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      /*background-color: #e9f5e1; light green */
+     /* background-color: #e9f0e9; light gray */
+     /*background-color: #fceab6; beige */
+   }
+
+   .btn {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: auto;
+    display: block;
+   }
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    /* Remove border and change up box shadow for more contrast */
+    .top .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .top .navbar .brand {
+      padding: 0px; /* Increase vertical padding to match navbar links */
+      font-size: 25px;
+      text-align: center;
+      margin-top: 29px;
+      margin-right: 12px;
+      font-weight: bold;
+      font-family: 'Cinzel Decorative', sans-serif;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+    .dropdown-menu {
+      list-style-type: none;
+    }
+    /* Navbar links: increase padding for taller navbar */
+    .top .navbar .nav > li > a {
+      padding: 15px 20px;
+      color: gray;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .top .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      font-family: 'Palanquin', sans-serif;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: bold;
+      font-family: 'Palanquin',sans-serif;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+    .img-circle {
+      height: 140px;
+      width: auto;
+    }
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .top .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .top .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        position: relative;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .top .navbar-inner {
+        margin: -20px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 100px
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 3;
+      }
+
+    }
+#intro {
+  margin-top: 100px;
+  text-align: center;
+  font-family: 'Palanquin', sans-serif;
+  height: 200px;
+  background: linear-gradient(to right, rgba(125,154,184,0), rgba(125,154,184,1));
+  /*background: linear-gradient(to right, rgba(150, 18, 18, 0.5),rgba(128, 15, 15, 1)); burgundy */
+}
+.container-fluid .row h3 {
+  margin: 5%;
+}
+.container.marketing .row {
+  margin-top: -50px;
+}
+.top .navbar.transparent.navbar-default .navbar-inner {
+  position: static;
+  border-width: 0px;
+  -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+   background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%); */
+
+}
+.container.marketing {
+  margin-top: 100px;
+}
+ul {
+  margin-top: 40px;
+}
+li {
+  line-height: 50px;
+}
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="https://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="https://getbootstrap.com/2.3.2/assets/ico/favicon.png">
+ </head>
+
+  <body>
+
+
+<div class="top">
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container-fluid">
+
+        <div class="navbar transparent navbar-default">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" style="color: black; font-weight: bold; text-shadow: none;" href="index.html">Rational Investing</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+             <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                     <li>
+                      <a href="valuation.html">Valuation</a>
+                     </li>
+
+
+                  <li class="dropdown">
+                  <a href="https://getbootstrap.com/2.3.2/examples/carousel.html#" class="dropdown-toggle" data-toggle="dropdown">Coverage<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="industrysector.html">Industry Sector</a></li>
+                    <li><a href="https://getbootstrap.com/2.3.2/examples/carousel.html#">Global Region</a></li>
+                    <li><a href="https://getbootstrap.com/2.3.2/examples/carousel.html#">Exchange Traded Funds</a></li>
+                    <li><a href="https://getbootstrap.com/2.3.2/examples/carousel.html#">Tutorial</a></li>
+                  </ul>
+                </li>
+                  <li class="dropdown">
+                  <a href="https://getbootstrap.com/2.3.2/examples/carousel.html#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="ourteam.html">Our Team</a></li>
+                    <li><a href="https://getbootstrap.com/2.3.2/examples/carousel.html#">Our Mission</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Nav header</li>
+                    <li><a href="https://getbootstrap.com/2.3.2/examples/carousel.html#">Separated link</a></li>
+                    <li><a href="https://getbootstrap.com/2.3.2/examples/carousel.html#">One more separated link</a></li>
+                  </ul>
+                </li>
+                <li><a href="https://getbootstrap.com/2.3.2/examples/carousel.html#contact">Contact</a></li>
+                <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
+
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+</div><!-- /.top -->
+<div class="container-fluid" id="intro">
+<div class="row">
+ <h3>Rational Investing is an institutional quality system for the screening, data scrubbing, and discounted cash flow valuation of stocks as well as entire ETF’s or other portfolios</h3>
+</div>
+</div>
+
+    <!-- Carousel
+    ================================================== -->
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+          <img class="img-circle" src='images/ai.png'>
+          <h2>Heuristics</h2>
+          <p>The only available system to use heuristics rather than statistical tools.</p>
+         <!-- <p><a class="btn" href="https://getbootstrap.com/2.3.2/examples/carousel.html#">View details »</a></p> -->
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" src="images/market.png">
+          <h2>Standardized</h2>
+          <p>Completely standardized across all sectors and market caps</p>
+        <!--  <p><a class="btn" href="https://getbootstrap.com/2.3.2/examples/carousel.html#">View details »</a></p> -->
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" src="images/yield_curve.gif">
+          <h2>How It Works</h2>
+          <p>The system uses the yield curve as well as the specific circumstances of each firm in its valuation in a manner not possible with regression and ratio based filtering.</p>
+        <!--  <p><a class="btn" href="https://getbootstrap.com/2.3.2/examples/carousel.html#">View details »</a></p> -->
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+<!--**SCROLLSPY**
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          My Navbar
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Section 1</a></li>
+          <li><a href="#section2">Section 2</a></li>
+          <li><a href="#section3">Section 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<div id="section1" class="container-fluid">
+  <h1>Section 1</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section2" class="container-fluid">
+  <h1>Section 2</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section3" class="container-fluid">
+  <h1>Section 3</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+
+**END OF SCROLLSPY*-->
+
+      <div class="featurette" data-spy="scroll" data-target=".navbar">
+        <img class="featurette-image pull-right" src="images/market_returns.gif">
+        <h2 class="featurette-heading"> Artificial Intelligence <span class="muted">A quantum leap from the current state of the art.</span></h2>
+          <ul class="lead">
+            <li>Based on research on fundamental factors and the impact of the yield curve on equity valuation conducted by Fama and French</li>
+            <li>We go <b> beyond </b> CFROI, statistical modeling, and principal components analysis to execute a logical tree in a fashion that an experienced <b> human </b> analyst would.</li>
+            <li>We incorporate <b>macroeconomic risks</b> when testing our results for a fit across the entire U.S. equity market, not just a handful of names in a sector a typical analyst would have experience in. </li>
+          </ul>
+        <a class="btn" href="ai.html">View details »</a>  
+      </div>
+
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-left" src="./images/placeholder.png">
+        <h2 class="featurette-heading">For Our Clients <span class="muted">A Tailored User Experience</span></h2>
+        <br>
+       <ul class="lead">
+            <li>We support our models with a variety of screens based on investment style.</li>
+            <li>We offer additional analysis extracted from footnotes of SEC filings such as mineral reserves, ownership information, pension liabilities, etc. or from integration with third party data sources.</li>
+          </ul>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="./images/placeholder.png">
+        <h2 class="featurette-heading">Our Product's<span class="muted"> Edge</span></h2>
+        <p class="lead">
+          We have a unique understanding of the path of equity prices in the medium term, calibrated using an institutional size real money portfolio, as well as a transparent interface.
+        </p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="https://getbootstrap.com/2.3.2/examples/carousel.html#">Back to top</a></p>
+        <p>· © 1998-2018 Rational Investing · <a href="https://getbootstrap.com/2.3.2/examples/carousel.html#">Privacy</a> · <a href="https://getbootstrap.com/2.3.2/examples/carousel.html#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery.js.download"></script>
+    <script src="./js/bootstrap-transition.js.download"></script>
+    <script src="./js/bootstrap-alert.js.download"></script>
+    <script src="./js/bootstrap-modal.js.download"></script>
+    <script src="./js/bootstrap-dropdown.js.download"></script>
+    <script src="./js/bootstrap-scrollspy.js.download"></script>
+    <script src="./js/bootstrap-tab.js.download"></script>
+    <script src="./js/bootstrap-tooltip.js.download"></script>
+    <script src="./js/bootstrap-popover.js.download"></script>
+    <script src="./js/bootstrap-button.js.download"></script>
+    <script src="./js/bootstrap-collapse.js.download"></script>
+    <script src="./js/bootstrap-carousel.js.download"></script>
+    <script src="./js/bootstrap-typeahead.js.download"></script>
+    <script language="javascript" type="text/javascript" src="flot/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="flot/jquery.flot.js"></script>
+
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+      $.plot($("#placeholder"), [ [["Dec 08", 0%], [1, 1]] ], { yaxis: { max: 1 } });
+
+    </script>
+    <script src="./js/holder.js.download"></script>
+  
+
+<div id="pmo-dp-content-hook" style="display: none; width: 1px; height: 1px;"></div></body></html>
